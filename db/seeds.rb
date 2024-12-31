@@ -32,18 +32,17 @@ airlines = Airline.create([
   }
 ])
 
-
 reviews = Review.create([
   {
     title: 'Great Airline',
     description: 'I had a lovely time.',
     score: 5,
-    airline: airlines.first
+    airline_id: airlines.first.id
   },
   {
     title: 'Bad airline',
     description: 'I had a bad time.',
     score: 1,
-    airline: airlines.first
+    airline_id: airlines.first.id
   }
 ])
